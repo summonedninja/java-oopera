@@ -2,7 +2,6 @@ import java.util.Objects;
 
 public class Actor extends Person  {
     private double height;
-    private String color;
 
     public Actor(String name, String surname, Gender gender, double height) {
         super(name, surname, gender);

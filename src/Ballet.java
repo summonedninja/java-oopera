@@ -1,12 +1,9 @@
-import java.time.Duration;
-import java.util.List;
-
 public class Ballet extends  MusicalShow {
     private Choreographer choreographer;
 
 
-    public Ballet(String title, Duration duration, Director director,
-                   MusicAuthor musicAuthor, String librettoText,Choreographer choreographer) {
+    public Ballet(String title, int duration, Director director,
+                   Person musicAuthor, String librettoText,Choreographer choreographer) {
         super(title, duration, director, musicAuthor, librettoText);
         this.choreographer = choreographer;
     }

@@ -1,14 +1,13 @@
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Show {
-    private String title;
-    private Duration duration;
-    private Director director;
-    private List<Actor> actors = new ArrayList<>();
+    protected String title;
+    protected int duration;
+    protected Director director;
+    protected List<Actor> actors = new ArrayList<>();
 
-    public Show(String title, Duration duration, Director director) {
+    public Show(String title, int duration, Director director) {
         this.title = title;
         this.duration = duration;
         this.director = director;
@@ -23,11 +22,11 @@ public abstract class Show {
         this.title = title;
     }
 
-    public Duration getDuration() {
+    public int getDuration() {
         return duration;
     }
 
-    public void setDuration(Duration duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 

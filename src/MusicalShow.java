@@ -1,22 +1,19 @@
-import java.time.Duration;
-import java.util.List;
-
 public class MusicalShow extends Show {
-    private MusicAuthor musicAuthor;
+    private Person musicAuthor;
     private String librettoText;
 
-    public MusicalShow(String title, Duration duration,
-                       Director director,  MusicAuthor musicAuthor, String librettoText) {
+    public MusicalShow(String title, int duration,
+                       Director director,  Person musicAuthor, String librettoText) {
         super(title, duration, director);
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;
     }
 
-    public MusicAuthor getMusicAuthor() {
+    public Person getMusicAuthor() {
         return musicAuthor;
     }
 
-    public void setMusicAuthor(MusicAuthor musicAuthor) {
+    public void setMusicAuthor(Person musicAuthor) {
         this.musicAuthor = musicAuthor;
     }
 
